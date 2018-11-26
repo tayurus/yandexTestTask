@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header } from "./../../components";
+import { Header, Filters } from "./../../components";
 
 export class MainPage extends React.Component {
   constructor(props) {
@@ -8,6 +8,13 @@ export class MainPage extends React.Component {
   }
 
   render() {
-    return <Header />;
+    return (
+      <div className="MainPage">
+        <Header />
+        <div className="container">
+          <Filters filters={[{ title: "тест" }]} />
+        </div>
+      </div>
+    );
   }
 }

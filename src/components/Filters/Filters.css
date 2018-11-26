@@ -1,0 +1,13 @@
+.Filters {
+  padding: 2rem;
+}
+
+.Filters__title {
+  font-size: 3rem;
+  color: rgb(5, 22, 77);
+}
+
+.Filters__items {
+  display: flex;
+  align-items: center;
+}
