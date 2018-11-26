@@ -11,7 +11,7 @@ import { MainPage } from "./pages";
 export class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App text-center text-md-left">
         <Router history={history}>
           <div>
             <Route exact path="/" component={MainPage} />

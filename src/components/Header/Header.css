@@ -10,6 +10,7 @@
   position: absolute;
   bottom: 3%;
   left: 3%;
+  text-align: left;
 }
 
 @media (max-width: 1000px), (max-device-width: 1000px) {

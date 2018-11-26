@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Filters.css";
 
-import { Filter } from "./../index.js";
+import { Filter, Search } from "./../index.js";
 
 import PropTypes from "prop-types";
 
@@ -19,6 +19,10 @@ export const Filters = props => {
             className="m-4"
           />
         ))}
+        <Search
+          title="Номер которых мне известен"
+          placeholder="Введите номер рейса"
+        />
       </div>
     </div>
   );

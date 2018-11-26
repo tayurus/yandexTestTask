@@ -10,4 +10,11 @@
 .Filters__items {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px), (max-device-width: 1000px) {
+  .Filters__items {
+    flex-direction: column;
+  }
 }
