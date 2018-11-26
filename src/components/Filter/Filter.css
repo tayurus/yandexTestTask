@@ -1,3 +1,22 @@
 .Filter {
   font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px dashed;
+}
+
+.Filter.active {
+  position: relative;
+  border-bottom: 1px dashed #28c228;
+}
+
+.Filter.active::after {
+  position: absolute;
+  content: "";
+  background: url("https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/15-512.png")
+    no-repeat center / contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 35%;
+  right: -1.75rem;
 }

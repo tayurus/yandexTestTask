@@ -5,11 +5,12 @@ import "./Filter.css";
 import PropTypes from "prop-types";
 
 export const Filter = props => {
-  const { filter, className } = props;
+  const { filter, className, active, onClick } = props;
 
   return (
     <div
-      className={"Filter " + className + (filter.active ? "Filter_active" : "")}
+      className={"Filter " + className + (active ? "active" : "")}
+      onClick={onClick}
     >
       {filter.title}
     </div>
@@ -17,9 +18,12 @@ export const Filter = props => {
 };
 
 Filter.propTypes = {
-  filter: PropTypes.object.isRequired
+  filter: PropTypes.object.isRequired,
+  onClick: PropTypes.func
 };
 
 Filter.defaultProps = {
-  className: ""
+  className: "",
+  active: false,
+  onClick: () => {}
 };
