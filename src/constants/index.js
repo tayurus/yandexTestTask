@@ -11,3 +11,30 @@ export const filters = [
     title: "Задержанные в/из Шереметьево"
   }
 ];
+
+export const tableHeaders = [
+  {
+    text: "№ Рейса"
+  },
+
+  {
+    text: "Откуда"
+  },
+
+  {
+    text: "Куда"
+  },
+
+  {
+    text: "Дата вылета"
+  },
+
+  {
+    text: "Дата прилета"
+  },
+
+  {
+    text: "Статус"
+  },
+
+]

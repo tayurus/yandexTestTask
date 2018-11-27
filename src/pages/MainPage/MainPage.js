@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Header, Filters } from "./../../components";
+import { Header, Filters, FlightTable } from "./../../components";
 
-import { filters } from "./../../constants";
+import { filters, tableHeaders } from "./../../constants";
 
 export class MainPage extends React.Component {
   constructor(props) {
@@ -10,11 +10,13 @@ export class MainPage extends React.Component {
   }
 
   render() {
+    
     return (
       <div className="MainPage">
         <Header />
         <div className="container">
           <Filters filters={filters} />
+          <FlightTable tableHeaders={tableHeaders}/>
         </div>
       </div>
     );
